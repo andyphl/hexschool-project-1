@@ -82,7 +82,6 @@ h1 {
 
 .title .en {
     color: #a00404;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -97,25 +96,22 @@ section {
 
 .profile li + li,
 .education li + li,
-.work-experience li + li {
+.experience li + li {
     margin-top: 24px;
 }
 
-.experience-list {
+.experience ul {
     border-left: 1px solid #415165;
     margin-left: 20px;
     padding-left: 24px;
 }
 
-.experience-list h3 {
+.experience h3,
+.experience img {
     margin-bottom: 8px;
 }
 
-.experience-list img {
-    margin-bottom: 8px;
-}
-
-.experience-list p {
+.experience p {
     font-size: 20px;
     line-height: 30px;
 }
