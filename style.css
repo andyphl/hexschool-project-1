@@ -169,6 +169,10 @@ body {
     margin-bottom: 20px;
 }
 
+.footer {
+    padding-bottom: 36px;
+}
+
 .footer-wrap {
     width: 1200px;
     margin: 0 auto;
@@ -191,10 +195,6 @@ body {
 
 .contact li > a:hover {
     color: #000;
-} 
-
-.media {
-    padding-bottom: 36px;
 }
 
 .media li{
