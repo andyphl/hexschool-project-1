@@ -48,12 +48,13 @@ table {
 }
 
 /* ------------------------------------ */
-* {
-    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
-}
-
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    line-height: 1.5;
 }
 
 .wrap {
@@ -61,19 +62,20 @@ table {
     margin: 0 auto;
 }
 
-h1 {
-    font-size: 80px;
-    padding-top: 47px;
+.name {
+    font-size: 5rem;
     line-height: 94px;
+    padding-top: 47px;
     border-bottom: 2px solid #000;
+    margin-bottom: 48px;
 }
 
 .avatar {
-    margin: 48px 0;
+    margin-bottom: 48px;
 }
 
 .title {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 43px;
     padding-bottom: 8px;
     margin-bottom: 16px;
@@ -81,23 +83,22 @@ h1 {
 }
 
 .title .en {
-    color: #a00404;
-    font-weight: 500;
     font-size: 24px;
+    font-weight: 500;
     line-height: 28px;
+    color: #a00404;
     margin-left: 16px;
 }
 
-section {
+.section {
     margin-bottom: 72px;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
 }
 
-.profile li + li,
-.education li + li,
-.experience li + li {
-    margin-top: 24px;
+.profile li,
+.education li,
+.experience li {
+    margin-bottom: 24px;
 }
 
 .experience ul {
@@ -112,19 +113,20 @@ section {
 }
 
 .experience p {
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 30px;
 }
 
 .skills,
 .footer {
+    min-width: 1200px;
     color: #fff;
     background: #415165;
 }
 
 .skills h2,
 .footer h2 {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 45px;
     text-align: center;
     border-bottom: 1px solid #fff;
@@ -132,9 +134,17 @@ section {
     font-family: 'PingFang TC';
 }
 
+.skills h2 {
+    margin-bottom: 40px;
+}
+
+.footer h2 {
+    margin-bottom: 32px;
+}
+
 .skills h2 > span,
 .footer h2 > span {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 28px;
     margin-left: 16px;
@@ -149,14 +159,14 @@ section {
 .skills-list {
     display: inline-block;
     text-align: left;
-    font-weight: 300;  
-    margin: 40px 0;
+    font-weight: 300; 
+    margin-bottom: 40px;
     border-left: 1px solid #96a9c4;
     padding-left: 24px;
 }
 
-.skills-list li + li {
-    margin-top: 20px;
+.skills-list li {
+    margin-bottom: 20px;
 }
 
 .footer-wrap {
@@ -166,12 +176,8 @@ section {
 }
 
 .contact {
-    display: inline-block;
-    text-align: center;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 1.5rem;
     font-weight: 300;
-    margin-top: 32px;
 }
 
 .contact li {
@@ -183,12 +189,20 @@ section {
     text-decoration: none;
 } 
 
+.contact li > a:hover {
+    color: #000;
+} 
+
 .media {
     padding-bottom: 36px;
 }
 
 .media li{
-    display: inline;
+    display: inline-block;
+}
+
+.media li > a {
+    display: block;
 }
 
 .media li + li {
